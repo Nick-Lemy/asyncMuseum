@@ -45,35 +45,35 @@ const exhibits = [
       name: "Nymphéas",
       info: "Série emblématique de Claude Monet peinte entre 1897 et 1926, représentant les reflets changeants de la lumière sur un étang recouvert de nénuphars dans son jardin de Giverny.",
       auteur: "Claude Monet",
-      image: "https://upload.wikimedia.org/wikipedia/commons/8/86/Claude_Monet_-_Water_Lilies.jpg",
+      image: "https://imgc.allpostersimages.com/img/posters/claude-monet-water-lilies-nympheas-c-1916_u-l-pjhqy50.jpg",
     },
     {
       id: 7,
       name: "La Naissance de Vénus",
       info: "Chef-d'œuvre de Sandro Botticelli réalisé vers 1485, illustrant Vénus sortant des eaux sur un coquillage géant, entourée de personnages mythologiques dans un style raffiné.",
       auteur: "Sandro Botticelli",
-      image: "https://upload.wikimedia.org/wikipedia/commons/1/1d/Birth_of_Venus_Botticelli.jpg",
+      image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxlhlgEfF61x6n7ezhAQ0QJfgJLzdgzyysx6IS6bibj0IltLXIE9WZHQTWt4HOoDpC0UU&usqp=CAU",
     },
     {
       id: 8,
       name: "Les Demoiselles d'Avignon",
       info: "Tableau révolutionnaire de 1907 signé Pablo Picasso. Il marque une rupture avec la peinture classique en introduisant des formes anguleuses et des visages inspirés de l'art africain.",
       auteur: "Pablo Picasso",
-      image: "https://upload.wikimedia.org/wikipedia/en/d/d5/Les_Demoiselles_d%27Avignon.jpg",
+      image: "https://literarymovementsmanifesto.wordpress.com/wp-content/uploads/2011/01/25_picasso_les_demoiselles_davignon.jpg",
     },
     {
       id: 9,
       name: "La Liberté guidant le peuple",
       info: "Peinte par Eugène Delacroix en 1830, cette œuvre allégorique célèbre la Révolution de Juillet. La figure centrale, représentant la Liberté, brandit fièrement le drapeau tricolore français.",
       auteur: "Eugène Delacroix",
-      image: "https://upload.wikimedia.org/wikipedia/commons/9/99/Eug%C3%A8ne_Delacroix_-_La_Libert%C3%A9_guidant_le_peuple.jpg",
+      image: "https://histoire-image.org/sites/default/files/2024-05/delacroix-liberte-guidant-le-peuple.jpg",
     },
     {
       id: 10,
       name: "Le Baiser",
       info: "Créée en 1907-1908 par Gustav Klimt, cette toile célèbre l’amour et l’intimité. Les motifs dorés et les formes géométriques sont caractéristiques du mouvement Art Nouveau.",
       auteur: "Gustav Klimt",
-      image: "https://upload.wikimedia.org/wikipedia/commons/7/7d/The_Kiss_-_Gustav_Klimt_-_Google_Cultural_Institute.jpg",
+      image: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/40/The_Kiss_-_Gustav_Klimt_-_Google_Cultural_Institute.jpg/1200px-The_Kiss_-_Gustav_Klimt_-_Google_Cultural_Institute.jpg",
     }
   ];
   
