@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Museum Exhibits</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <h1>Welcome to Our Museum</h1>
+
+  <ul>
+    <% exhibits.forEach(exhibit => { %>
+      <li>
+        <strong><%= exhibit.name %></strong>: <%= exhibit.description %>
+      </li>
+    <% }); %>
+  </ul>
+</body>
+</html>
