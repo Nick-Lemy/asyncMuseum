@@ -12,8 +12,8 @@ app.get('/', (req, res)=>{
 
 app.get("/exhibits", (req, res) => {
     const exhibits = [
-      { id: 1, name: "Mona Lisa", description: "Leonardo da Vinci masterpiece" },
-      { id: 2, name: "Starry Night", description: "Van Gogh painting" },
+      { id: 1, name: "Mona Lisa", info: "", auteur: "Leonardo da Vinci masterpiece" },
+      { id: 2, name: "Starry Night", info: "", auteur: "Van Gogh painting" },
     ];
   
     res.render("index", { exhibits });
