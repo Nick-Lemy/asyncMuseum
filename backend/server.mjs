@@ -4,13 +4,7 @@ const app = express();
 // Middlewares
 app.set("view engine", "ejs");
 app.use(express.static("public"));
-
-app.get("/", (req, res) => {
-  res.render("home");
-});
-
-app.get("/exhibits", (req, res) => {
-  const exhibits = [
+const exhibits = [
     {
       id: 1,
       name: "La Joconde",
@@ -53,15 +47,21 @@ app.get("/exhibits", (req, res) => {
     },
   ];
 
+app.get("/", (req, res) => {
+  res.render("home");
+});
+
+app.get("/exhibits", (req, res) => {
+
   res.render("index", { exhibits });
 });
 
 app.get("/exhibits/:id", (req, res) => {
   const { id } = req.query;
   const oeuvre = exhibits[id - 1];
-  res.render("oeuvre.ejs", {});
+  res.render("oeuvre.ejs", { oeuvre });
 });
 
-app.listen(3612, () => {
-  console.log("http://localhost:3612");
+app.listen(3000, () => {
+  console.log("http://localhost:3000");
 });
