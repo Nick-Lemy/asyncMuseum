@@ -4,7 +4,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title><%= oeuvre.name %> | AsyncMuseum</title>
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
 
 <body>
@@ -21,22 +22,19 @@
         <a href="" class="bg-orange-800 px-5 py-2 rounded-lg text-white font-semibold">Voir les Exhibition</a>
       </div>
     </nav>
-    <div class="bg-[url('https://cdn-museabrugge-be.cloud.glue.be/https%3A%2F%2Fwww.museabrugge.be%2Fvolumes%2Fgeneral%2FBezoek-het-Groeningemuseum_Musea-Brugge.jpg?dpr=2&w=1440&h=590&fit=crop&s=3c676338b7222eaf5b274e130e09698e')] flex items-center justify-center">
-      <div class="py-50 bg-black/80 h-full w-full">
-        <div class="flex text-white w-full h-full flex-col items-center gap-7">
-          <h2 class="text-4xl font-semibold text-center">
-            Async Museum disponible partout <br> dans le monde
-          </h2>
-          <p class="text-lg">
-            Ton meilleur Musée en ligne
-          </p>
-          <a href="/exhibits" class="bg-orange-800 px-5 py-2 rounded-lg font-semibold text-black">Voir les Exhibition</a>
-        </div>
-      </div>
-    </div>
   </header>
-  
-
+  <main>
+    <div class=" py-10 max-w-7xl mx-auto">
+        <div class="flex grap-10">
+            <img class="h-120 w-3/7" src=<%= oeuvre.image %> alt="">
+            <div class="w-3/7 p-5 flex flex-col justify-between">
+                <h1 class="text-2xl font-semibold"> <%= oeuvre.name %></h1>
+                <p class="text-lg"> <span class=" font-bold">Description<br></span> <%= oeuvre.info %></p>
+                <p><span class="font-bold">Auteur(e) <br></span> <%= oeuvre.auteur %> </p>
+            </div>
+        </div>
+    </div>
+  </main>
 </body>
 
 </html>
