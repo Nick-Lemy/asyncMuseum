@@ -24,14 +24,16 @@
     </nav>
   </header>
   <div class="max-w-7xl mx-auto">
-    <h1 class="text-4xl font-bold">Oeuvres disponibles</h1>
+    <h1 class="text-4xl font-bold py-7">Oeuvres disponibles</h1>
     <ul class="flex flex-wrap gap-3">
       <% exhibits.forEach(exhibit => { %>
-      <li>
-        <a class="flex flex-col justify-center items-center">
-          <img class="w-50 h-70" src=<%= exhibit.image %> alt="">
-          <h3><%= exhibit.name %></h3>
-          <p><%= exhibit.info %></p>
+      <li class="border border-gray-300 rounded-md w-62 ">
+        <a href="/exhibits/<%= exhibit.id %>" class="flex flex-col justify-center ">
+          <img class="h-70" src=<%= exhibit.image %> alt="">
+          <div class="p-2">
+            <h3 class="text-md font-medium"><%= exhibit.name %></h3>
+            <p class="text-gray-500"><%= exhibit.auteur %></p>
+          </div>
         </a>
       </li>
       <% }); %>

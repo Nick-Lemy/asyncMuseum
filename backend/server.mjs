@@ -18,9 +18,14 @@ app.get("/exhibits", (req, res) => {
         { id: 5, name: "La Persistance de la mémoire", info: "Montres molles surréalistes", auteur: "Salvador Dalí", image: "https://upload.wikimedia.org/wikipedia/en/d/dd/The_Persistence_of_Memory.jpg" },
         { id: 7, name: "Guernica", info: "Mural anti-guerre", auteur: "Pablo Picasso", image: "https://upload.wikimedia.org/wikipedia/en/7/74/PicassoGuernica.jpg" },
       ];
-  
+
     res.render("index", { exhibits });
   });
+
+app.get("/exhibits/:id", (req, res)=>{
+    
+})
+
 app.listen(3612, ()=>{
     console.log('http://localhost:3612')
 })
