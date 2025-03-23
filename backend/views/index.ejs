@@ -1,41 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <title>Museum Exhibits</title>
   <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 
 </head>
-<body>
-    <header class="">
-        <nav class="flex bg-black">
-          <div class="flex mx-5 py-4 items-center max-w-7xl mx-auto justify-between w-full">
-            <h1 class="text-3xl text-white font-bold"><span class="text-orange-800">Async</span> Museum</h1>
-            <ul class="flex *:hover:text-orange-800 text-white gap-14">
-              <li><a href="">Home</a></li>
-              <li><a href="">Exhibition</a></li>
-              <li><a href="">About</a></li>
-              <li><a href="">Contact us</a></li>
-            </ul>
-            <a href="" class="bg-orange-800 px-5 py-2 rounded-lg text-white font-semibold">Voir les Exhibition</a>
-          </div>
-        </nav>
-      </header>
-  <h1>Welcome to Our Museum</h1>
 
-  <ul>
-    <% exhibits.forEach(exhibit => { %>
-      <!-- <li>
-        <strong></strong>
-      </li> -->
+<body>
+  <header class="">
+    <nav class="flex bg-black">
+      <div class="flex mx-5 py-4 items-center max-w-7xl mx-auto justify-between w-full">
+        <h1 class="text-3xl text-white font-bold"><span class="text-orange-800">Async</span> Museum</h1>
+        <ul class="flex *:hover:text-orange-800 text-white gap-14">
+          <li><a href="">Home</a></li>
+          <li><a href="">Exhibition</a></li>
+          <li><a href="">About</a></li>
+          <li><a href="">Contact us</a></li>
+        </ul>
+        <a href="" class="bg-orange-800 px-5 py-2 rounded-lg text-white font-semibold">Voir les Exhibition</a>
+      </div>
+    </nav>
+  </header>
+  <div class="max-w-7xl mx-auto">
+    <h1 class="text-4xl font-bold">Oeuvres disponibles</h1>
+    <ul class="flex flex-wrap gap-3">
+      <% exhibits.forEach(exhibit => { %>
       <li>
-        <a class="bg-red-200">
-            <img src=<%= exhibit.image %> alt="">
-            <h3><%= exhibit.name %></h3>
-            <p><%= exhibit.info %></p>
+        <a class="flex flex-col justify-center items-center">
+          <img class="w-50 h-70" src=<%= exhibit.image %> alt="">
+          <h3><%= exhibit.name %></h3>
+          <p><%= exhibit.info %></p>
         </a>
       </li>
-    <% }); %>
-  </ul>
+      <% }); %>
+    </ul>
+  </div>
 </body>
+
 </html>
